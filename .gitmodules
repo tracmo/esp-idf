@@ -54,10 +54,6 @@
 	path = components/lwip/lwip
 	url = https://github.com/espressif/esp-lwip.git
 
-[submodule "components/mqtt/esp-mqtt"]
-	path = components/mqtt/esp-mqtt
-	url = https://github.com/espressif/esp-mqtt.git
-
 [submodule "components/protobuf-c/protobuf-c"]
 	path = components/protobuf-c/protobuf-c
 	url = https://github.com/protobuf-c/protobuf-c
@@ -69,3 +65,6 @@
 [submodule "examples/build_system/cmake/import_lib/main/lib/tinyxml2"]
 	path = examples/build_system/cmake/import_lib/main/lib/tinyxml2
 	url = https://github.com/leethomason/tinyxml2
+[submodule "components/mqtt/espmqtt"]
+	path = components/mqtt/espmqtt
+	url = https://github.com/espressif/esp-mqtt.git
