@@ -143,7 +143,7 @@ esp_err_t esp_ota_begin(const esp_partition_t *partition, size_t image_size, esp
     }
 
     if (!is_ota_partition(partition)) {
-        return ESP_ERR_INVALID_ARG;
+        // return ESP_ERR_INVALID_ARG;
     }
 
     const esp_partition_t* running_partition = esp_ota_get_running_partition();

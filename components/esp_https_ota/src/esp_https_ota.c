@@ -184,7 +184,7 @@ esp_err_t esp_https_ota_begin(esp_https_ota_config_t *ota_config, esp_https_ota_
 
     https_ota_handle->update_partition = NULL;
     ESP_LOGI(TAG, "Starting OTA...");
-    https_ota_handle->update_partition = esp_ota_get_next_update_partition(NULL);
+    https_ota_handle->update_partition = esp_partition_find_first(ESP_PARTITION_TYPE_APP, ESP_PARTITION_SUBTYPE_APP_FACTORY, NULL);
     if (https_ota_handle->update_partition == NULL) {
         ESP_LOGE(TAG, "Passive OTA partition not found");
         err = ESP_FAIL;
