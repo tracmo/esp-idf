@@ -22,11 +22,16 @@
 #include "driver/periph_ctrl.h"
 
 static const char* TIMER_TAG = "timer_group";
+
+// TRACMO NOTES
+#define TIMER_CHECK(a, str, ret_val) if (!(a)) {return (ret_val); }
+/*
 #define TIMER_CHECK(a, str, ret_val) \
     if (!(a)) { \
         ESP_LOGE(TIMER_TAG,"%s(%d): %s", __FUNCTION__, __LINE__, str); \
         return (ret_val); \
     }
+*/
 
 #define TIMER_GROUP_NUM_ERROR   "TIMER GROUP NUM ERROR"
 #define TIMER_NUM_ERROR         "HW TIMER NUM ERROR"
